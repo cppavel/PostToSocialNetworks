@@ -1,0 +1,58 @@
+﻿<Page
+    x:Class="PostToSocialNetworks.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PostToSocialNetworks"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.25*"/>
+            <RowDefinition Height="0.25*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.4*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.4*"/>
+            <ColumnDefinition Width="0.4*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name ="userInfo" Text="USER INFO" FontSize="25" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2"   Grid.Row="0" TextAlignment="Left" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button x:Name="fbAuthorize" FontSize="25" Content="FB Authorization" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="fbAuthorize_Click"/>
+        <Button x:Name="vkAuthorize" FontSize="25" Content="VK Authorization" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="vkAuthorize_Click"/>
+        <ComboBox x:Name="fbGroups" FontSize="20" Header="FB GROUPS" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" SelectionChanged="fbGroups_SelectionChanged"  />
+        <ComboBox x:Name="vkGroups" FontSize="20" Header="VK GROUPS" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" SelectionChanged="vkGroups_SelectionChanged"  />
+        <Button x:Name="reset" FontSize="25" Content="Reset" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="reset_Click"/>
+        <Button x:Name="attach" FontSize="25" Content="Attach Image" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="attach_Click"/>
+        <Button x:Name="post" FontSize="25" Content="Post" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="post_Click"/>
+
+        <ScrollViewer Grid.Column="0" Grid.ColumnSpan="3"  Grid.Row="3">
+            <ScrollViewer.Content>
+                <TextBlock x:Name ="attachedImages" Text="Currently attached:" TextWrapping="Wrap" FontSize="25"  TextAlignment="Left" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </ScrollViewer.Content>
+        </ScrollViewer>
+        
+        <CheckBox x:Name="sendToGroup" Grid.Column="2" Grid.Row="2" FontSize="25" Content="Send to group" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Checked="sendToGroup_Checked" Unchecked="sendToGroup_Unchecked" Indeterminate="sendToGroup_Indeterminate" />
+        
+        <ScrollViewer Grid.Column="0" Grid.ColumnSpan="4"  Grid.Row="4">
+            <ScrollViewer.Content>
+                <TextBox x:Name="message" Text="Enter message here" FontSize="25" TextAlignment="Left" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextChanged="message_TextChanged"/>
+            </ScrollViewer.Content>
+        </ScrollViewer>
+
+        <ScrollViewer Grid.Column="0" Grid.ColumnSpan="4"  Grid.Row="5">
+            <ScrollViewer.Content>
+                <TextBlock x:Name ="log" Text="" TextWrapping="Wrap" FontSize="25"  TextAlignment="Left" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </ScrollViewer.Content>
+        </ScrollViewer>
+
+
+
+    </Grid>
+</Page>
