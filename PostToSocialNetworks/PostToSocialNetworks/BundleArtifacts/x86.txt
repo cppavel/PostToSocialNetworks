@@ -1,0 +1,2 @@
+MainPackage=C:\Users\HYPER\Documents\Visual Studio 2015\Projects\PostToSocialNetworks\PostToSocialNetworks\bin\x86\Debug\PostToSocialNetworks_1.0.0.0_x86_Debug.appx
+SymbolPackage=C:\Users\HYPER\Downloads\PostToSocialNetworks_1.0.0.0_Debug_Test\PostToSocialNetworks_1.0.0.0_x86_Debug.appxsym
