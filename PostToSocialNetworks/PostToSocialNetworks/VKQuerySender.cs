@@ -15,7 +15,7 @@ namespace PostToSocialNetworks
     class VKQuerySender
     {
         private static readonly HttpClient client = new HttpClient();
-        public const String APPLICATION_ID = "7399506";
+        public const String APPLICATION_ID = "APP_ID";
         private const String API_URL = "https://api.vk.com/method/";
 
         private string token;
