@@ -16,7 +16,7 @@ namespace PostToSocialNetworks
 
     class FacebookQuerySender
     {
-        public static string APPLICATION_ID = "APPID";
+        public static string APPLICATION_ID = "APP_ID";
         //Should be stored on the server, and any query using app_secret should be run from the server as well.
         private static string APP_SECRET = "APP_SECRET";
         private const string API_URL = "https://graph.facebook.com/v6.0/";
