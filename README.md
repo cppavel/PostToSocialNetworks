@@ -1,4 +1,4 @@
-[ENGLISH]
+### POST TO SOCIAL NETWORKS
 
 I used C# and XAML. The application is based on the UWP framework and Facebook Graph API + VK API were implemented in the backend.  Moreover, I used Newtonsoft.json and several additional libraries. I chose UWP because Facebook API requires authentication from Windows Store for the desktop applications based on .NET. 
 
