@@ -1,6 +1,6 @@
 ### POST TO SOCIAL NETWORKS
 
-I used C# and XAML. The application is based on the UWP framework and Facebook Graph API + VK API were implemented in the backend.  Moreover, I used Newtonsoft.json and several additional libraries. I chose UWP because Facebook API requires authentication from Windows Store for the desktop applications based on .NET. 
+I used C# and XAML. The application is based on the UWP framework and Facebook Graph API + VK API. Moreover, I used Newtonsoft.json and several additional libraries. I chose UWP because Facebook API requires authentication from Windows Store for the desktop applications based on .NET. 
 
 The application is desktop, on the main page there are authentification buttons, message forms as well as attach button, log, active accounts information and controls, which allow to choose between posting to a public page and user's profile.
 
